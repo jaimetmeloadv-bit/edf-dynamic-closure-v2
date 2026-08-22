@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use the Dynamic Closure derivations or computational certificates, please cite this repository and the Version-2 manuscript."
+title: "EDF Dynamic Closure: Version-2 Computational Repository"
+type: software
+authors:
+  - family-names: Melo
+    given-names: Jaime
+version: "2.0-draft"
+date-released: "2026-08-22"
+repository-code: "https://github.com/jaimetmeloadv-bit/edf-dynamic-closure-v2"
+preferred-citation:
+  type: article
+  title: "The Entropic Dimensional Framework: Dynamic Matrix Closure, Twelve-Fold Compatibility, and Transient Boundary Memory"
+  authors:
+    - family-names: Melo
+      given-names: Jaime
+  year: 2026
