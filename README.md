@@ -1,87 +1,170 @@
-# EDF Dynamic Closure — Version 2
+# EDF Dynamic Closure — Computational Repository
 
-This repository is the mathematical and computational companion to the Version-2 manuscript:
+This repository contains the computational implementation, numerical diagnostics, algebraic certificates, tables, and visualization resources developed for the **Entropic Dynamic Framework (EDF) Dynamic Closure program**.
 
-**The Entropic Dimensional Framework: Dynamic Matrix Closure, Twelve-Fold Compatibility, and Transient Boundary Memory**
+The associated Version-2 theoretical manuscript is maintained **separately** while it undergoes journal evaluation. The manuscript source is not part of this public repository.
 
-It preserves the Dynamic Closure Notebook (Entries 01–16), including null controls, exploratory residuals, local/noisy pathway dynamics, operator-algebra certificates, premise audits, theorem repairs, robustness tests, and the theorem-led Version-2 manuscript.
+## What is public here
 
-## Central theorem chain
+- Dynamic Closure Notebook entries 01–16 as executable Python scripts;
+- exact and numerical tables used to audit the closure construction;
+- robustness, null-control, transient-pathway, and falsification diagnostics;
+- finite Weyl / matrix-algebra certificates;
+- selected publication-quality figures derived directly from the notebook calculations;
+- reproducibility and claim-status documentation.
 
-The mature closure result is
+The repository is intended to stand as an independent computational record. It is not contingent on acceptance of any particular manuscript.
+
+---
+
+## Central mathematical chain
+
+For a resolved finite phase space with primitive transitive traversal, the notebook verifies the full matrix-algebra closure
 
 \[
 \text{resolved finite phase}
-\rightarrow
+\longrightarrow
 \text{primitive transitive traversal}
-\rightarrow
+\longrightarrow
 M_k(\mathbb C)
-\rightarrow
+\longrightarrow
 C(k)=k^2.
 \]
 
-EDF then applies the separately stated **Fibonacci Compatibility Condition**
+EDF then studies the separately stated Fibonacci Compatibility Condition
 
 \[
 F_k=C(k),
 \]
 
-so
+which gives
 
 \[
-F_k=k^2,
+F_k=k^2.
 \]
 
-whose unique nontrivial solution for \(k\ge2\) is
+For the tested nontrivial sector range, the exact equality occurs at
 
 \[
-\boxed{k=12}.
+F_{12}=144=12^2.
 \]
 
-The notebook also derives the exact nonprimitive subclosure formula
+The notebook also verifies the nonprimitive subclosure relation
 
 \[
 \operatorname{alg}(Z,X^r)
 \cong
 \bigoplus_{\alpha=1}^{d}M_{k/d}(\mathbb C),
-\qquad
-d=\gcd(k,r),
+\qquad d=\gcd(k,r),
 \]
 
-with
+with generated dimension
 
 \[
 C_r(k)=\frac{k^2}{d}.
 \]
 
-For \(k=12\), the exact accessible capacities are
+For \(k=12\), the accessible dimensions are
 
 \[
 12,\;24,\;36,\;48,\;72,\;144.
 \]
 
-## Why this repository exists
+---
 
-The paper is theorem-led and does not reproduce the notebook chronology. This repository carries the full audit trail:
+## Featured computational results
 
-- neutral stochastic control showing that environmental noise does not manufacture \(k=12\);
-- candidate closure dynamics and local-pathway robustness;
-- alternative structural counts and countermodels;
-- finite Weyl/matrix closure certificates;
-- primitive and nonprimitive traversal tests;
-- defect and detailed-balance selection models;
-- absorbing-state residence, intervention, and Schur-memory analysis;
-- robustness and falsification tests;
-- repaired EDF theorem-to-prediction correspondence;
-- premise-minimality and exact subclosure algebra;
-- the complete Version-2 manuscript source.
+| Result | Notebook source | Representative output | Status |
+|---|---:|---:|---|
+| Fibonacci compatibility minimum | Entries 02–03 | detected sector \(k=12\) | exact residual minimum |
+| Pair-count equality | Entry 02 | \(F_{12}=12^2=144\) | exact |
+| Local-pathway robustness | Entry 03 | \(P(k=12)=0.194620\) at \(\beta=2\), noise = 0.15 | stochastic simulation |
+| Transient boundary-memory model | Entry 10 | baseline \(P(\mathrm{commit}\to k=12)=0.480253\) | reduced dynamics / numerical evaluation |
+| Schur reduction preservation | Entry 10 | max error \(1.554\times10^{-15}\) | numerical precision |
+| Exact subclosure capacities | Entry 16 | \(12,24,36,48,72,144\) | exact algebra |
 
-Failed stronger formulations are retained rather than silently removed.
+Machine-readable index: [`tables/featured_results.csv`](tables/featured_results.csv).
+
+### 1. Fibonacci compatibility residual
+
+The normalized residual
+
+\[
+B_k=\frac{|F_k-k^2|}{F_k+k^2}
+\]
+
+reaches zero at \(k=12\) for the even-sector scan used in Entries 02–03.
+
+![Fibonacci compatibility residual](figures/structural_residual.svg)
+
+Data: [`tables/structural_scores.csv`](tables/structural_scores.csv)  
+Source: [`notebook/entry_02/dynamic_closure_notebook_entry_02.py`](notebook/entry_02/dynamic_closure_notebook_entry_02.py)
+
+### 2. Local-pathway robustness under environmental noise
+
+Entry 03 replaces all-to-all transitions by the local topology
+
+\[
+k\leftrightarrow k\pm2,
+\]
+
+and scans structural coupling \(\beta\) against environmental noise. At \(\beta=0\), the model provides the unbiased dynamical control; increasing \(\beta\) tests the influence of the independently specified structural score.
+
+![Local-pathway robustness](figures/local_pathway_robustness.svg)
+
+Data: [`tables/phase_summary.csv`](tables/phase_summary.csv)  
+Source: [`notebook/entry_03/dynamic_closure_notebook_entry_03.py`](notebook/entry_03/dynamic_closure_notebook_entry_03.py)
+
+### 3. Transient-state causality and boundary footprints
+
+Entry 10 uses the absorbing-process identities
+
+\[
+N=(-Q)^{-1},\qquad B=NR,
+\]
+
+and the one-state Schur reduction
+
+\[
+Q_{\mathrm{eff}}
+=Q_{AA}-Q_{Aj}Q_{jj}^{-1}Q_{jA},
+\]
+
+\[
+R_{\mathrm{eff}}
+=R_A-Q_{Aj}Q_{jj}^{-1}R_j.
+\]
+
+Although transient occupation vanishes asymptotically, expected residence, pathway intervention effects, and Schur-complement boundary terms remain nonzero. For the configured scan, all 35 transient sectors have nonzero expected residence and nonzero boundary footprint; all 32 tested interior non-target interventions produce a positive soft-block effect on the target probability.
+
+![Transient residence and retained boundary footprint](figures/transient_boundary_memory.svg)
+
+Summary data: [`tables/entry10_boundary_memory_summary.csv`](tables/entry10_boundary_memory_summary.csv)  
+Source: [`notebook/entry_10/dynamic_closure_notebook_entry_10.py`](notebook/entry_10/dynamic_closure_notebook_entry_10.py)
+
+### 4. Exact \(k=12\) subclosure classification
+
+For \(U_r=X^r\), Entry 16 classifies every traversal step by
+
+\[
+d=\gcd(12,r),\qquad
+\ell=\frac{12}{d},\qquad
+C_r(12)=\frac{144}{d}.
+\]
+
+Primitive steps \(r=1,5,7,11\) generate the full 144-dimensional algebra; nonprimitive steps generate the exact lower-dimensional subclosures shown below.
+
+![Exact k=12 subclosure classification](figures/k12_subclosure_dimensions.svg)
+
+Data: [`tables/k12_step_algebra_classification.csv`](tables/k12_step_algebra_classification.csv)  
+Source: [`notebook/entry_16/dynamic_closure_notebook_entry_16.py`](notebook/entry_16/dynamic_closure_notebook_entry_16.py)
+
+---
 
 ## Notebook map
 
 | Entry | Main role |
-|---|---|
+|---:|---|
 | 01 | Null stochastic dynamics |
 | 02 | Candidate Fibonacci pair-closure functional |
 | 03 | Local pathway and environmental robustness |
@@ -96,37 +179,84 @@ Failed stronger formulations are retained rather than silently removed.
 | 12 | Alternative-structure premise audit |
 | 13 | EDF theorem-prediction correspondence |
 | 14 | Theorem repair and prediction reconstruction |
-| 15 | Repository/manuscript consolidation |
+| 15 | Repository / computational consolidation |
 | 16 | Premise minimality and exact subclosure algebra |
 
-## Scientific status
+The chronology is deliberately retained because failed stronger formulations, controls, and premise audits are part of the computational record rather than being silently removed.
 
-The repository deliberately separates exact/conditional mathematics from EDF-to-physics identifications. In particular:
+---
 
-- the exact \(\mathbb Z_3\) factor does not yet derive the observed fermion generations;
-- the conditional braid closure does not yet derive QCD confinement;
+## Repository layout
+
+```text
+edf-dynamic-closure-v2/
+├── README.md
+├── CITATION.cff
+├── REPRODUCIBILITY.md
+├── requirements.txt
+├── docs/
+│   ├── CLAIM_STATUS.md
+│   ├── MIGRATION_NOTE.md
+│   └── STATUS.md
+├── notebook/
+│   ├── entry_01/
+│   ├── ...
+│   └── entry_16/
+├── figures/
+│   ├── structural_residual.svg
+│   ├── local_pathway_robustness.svg
+│   ├── transient_boundary_memory.svg
+│   └── k12_subclosure_dimensions.svg
+└── tables/
+    ├── featured_results.csv
+    ├── structural_scores.csv
+    ├── phase_summary.csv
+    ├── entry10_boundary_memory_summary.csv
+    └── k12_step_algebra_classification.csv
+```
+
+---
+
+## Scientific-status discipline
+
+The repository distinguishes exact or conditional mathematics from proposed EDF-to-physics identifications. In particular:
+
+- the exact \(\mathbb Z_3\) factor does not by itself derive the observed fermion generations;
+- conditional braid closure does not by itself derive QCD confinement;
 - \(C(12)=144\) does not by itself derive Newton's constant;
-- finite internal dimension does not by itself imply ultraviolet finiteness;
-- Shannon entropy descent does not by itself identify the projection hierarchy with physical time.
+- finite internal dimension does not by itself establish ultraviolet finiteness;
+- entropy descent in the computational models does not by itself identify the projection hierarchy with physical time.
 
-These are stated limitations of the present framework, not hidden assumptions.
+These distinctions are part of the framework's falsifiability and claim-status discipline.
 
-## Key external mathematical references
+See [`docs/CLAIM_STATUS.md`](docs/CLAIM_STATUS.md).
 
-The closure construction uses standard finite Weyl/Schwinger operator theory and the Fibonacci perfect-power theorem of Bugeaud, Mignotte, and Siksek. The geometric-optimization discussion also cites A. B. Hopkins, F. H. Stillinger, and S. Torquato, arXiv:1003.3604, as a precedent for golden-ratio structure arising in an extremal packing problem; it is not used as a derivation of the EDF Fibonacci Compatibility Condition.
+---
 
 ## Reproducibility
 
-See [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md) and [`docs/CLAIM_STATUS.md`](docs/CLAIM_STATUS.md).
+Install the Python dependencies listed in [`requirements.txt`](requirements.txt), then execute the notebook-entry scripts individually. Each entry writes its detailed outputs to a dedicated runtime output directory.
 
-## Manuscript
+For the repository-level reproducibility notes, see [`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
 
-The theorem-led Version-2 LaTeX manuscript is maintained under `manuscript/`.
+The curated figures and tables in `figures/` and `tables/` are front-page extracts of the same calculations; the entry scripts remain the authoritative computational definitions.
+
+---
+
+## Relationship to the theoretical manuscript
+
+This repository is the **public computational companion** to ongoing EDF theoretical work. The journal manuscript is maintained separately during editorial and referee evaluation and is not distributed here.
+
+The computational record may therefore remain public independently of the publication outcome of any particular paper.
+
+---
 
 ## Citation
 
-Please cite the Version-2 manuscript and this repository together when using the Dynamic Closure derivations or computational certificates. Citation metadata are provided in `CITATION.cff`.
+Citation metadata for this repository are provided in [`CITATION.cff`](CITATION.cff).
+
+When results from a specific notebook entry are used, please identify the entry number and repository version or commit in addition to citing the associated theoretical work when available.
 
 ## License
 
-No open-source license is imposed in this repository at present. Until the author chooses a license, ordinary copyright restrictions apply.
+No open-source license is imposed in this repository at present. Until the author selects a license, ordinary copyright restrictions apply.
