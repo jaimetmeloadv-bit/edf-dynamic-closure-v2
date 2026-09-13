@@ -1,101 +1,0 @@
-
-% EDF Version 2 -- theorem-led manuscript build after Dynamic Closure Entries 01--16
-% Standalone two-column preview, with optional MDPI Symmetry compatibility.
-
-\IfFileExists{Definitions/mdpi.cls}{%
-  \documentclass[symmetry,article,submit,oneauthor]{Definitions/mdpi}
-  \newif\ifmdpiclass\mdpiclasstrue
-}{%
-  \documentclass[10pt,a4paper,twocolumn]{article}
-  \newif\ifmdpiclass\mdpiclassfalse
-}
-
-\usepackage{amsmath,amssymb,mathtools}
-\usepackage{bm}
-\usepackage{microtype}
-\usepackage{enumitem}
-\usepackage{url}
-\usepackage{hyperref}
-\usepackage{graphicx}
-
-\ifmdpiclass
-\else
-  \usepackage[margin=1.55cm,columnsep=0.62cm]{geometry}
-  \setlength{\parindent}{1em}
-  \setlength{\parskip}{0pt}
-\fi
-
-\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
-
-\newcommand{\C}{\mathbb{C}}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Tr}{\operatorname{Tr}}
-\newcommand{\sech}{\operatorname{sech}}
-\newcommand{\alg}{\operatorname{alg}}
-\newcommand{\Wr}{\operatorname{Wr}}
-\newcommand{\Tw}{\operatorname{Tw}}
-\newcommand{\Lk}{\operatorname{Lk}}
-\newcommand{\SL}{\operatorname{SL}}
-
-\ifmdpiclass
-\firstpage{1}
-\makeatletter
-\setcounter{page}{\@firstpage}
-\makeatother
-\pubvolume{1}
-\issuenum{1}
-\articlenumber{0}
-\pubyear{2026}
-\copyrightyear{2026}
-\datereceived{}
-\daterevised{}
-\dateaccepted{}
-\datepublished{}
-
-\Title{The Entropic Dimensional Framework: Dynamic Matrix Closure, Twelve-Fold Compatibility, and Transient Boundary Memory}
-\TitleCitation{Entropic Dimensional Framework}
-\Author{Jaime Melo $^{1}$}
-\AuthorNames{Jaime Melo}
-\AuthorCitation{Melo, J.}
-\address{$^{1}$ \quad Independent Researcher}
-\abstract{The Entropic Dimensional Framework (EDF) is a pregeometric proposal in which finite phase resolution and information-reducing projections precede effective geometric dynamics. This Version 2 replaces the previously assumed twelve-sector kernel by a conditional closure derivation. A finite phase resolver with simple spectrum and a transitive cyclic traversal generate the complete matrix algebra $M_k(\C)$, so the dynamic closure capacity is $C(k)=k^2$. Applying a separately stated Fibonacci Compatibility Condition, $F_k=C(k)$, gives $F_k=k^2$; the classification of Fibonacci perfect powers then selects the unique nontrivial solution $k=12$. Nonprimitive traversals are shown to generate the exact block algebra $\bigoplus_{\alpha=1}^{d}M_{k/d}(\C)$, with $d=\gcd(k,r)$ and capacity $C_r(k)=k^2/d$. For $k=12$, the Chinese remainder theorem further gives $\Z_{12}\cong\Z_3\times\Z_4$ and $\C^{12}\cong\C^3\otimes\C^4$. These results are used to repair the seven theorem statements of EDF: solitonic residues, triplication, twelve-fold informational quantization, braid closure, closure-capacity scaling, ultraviolet convergence, and entropy descent. A stochastic realization separates structural closure from environmental selection, while exact Schur reduction shows that a transient state may disappear from the explicit final description and remain encoded in effective boundary dynamics. The article distinguishes proved conditional mathematics from EDF-to-physics identifications that remain open to empirical test.}
-\keyword{finite phase space; dynamic closure; Weyl algebra; Fibonacci numbers; cyclic groups; Schur complement; metastability; coarse graining; emergent geometry}
-\else
-\title{\textbf{The Entropic Dimensional Framework: Dynamic Matrix Closure, Twelve-Fold Compatibility, and Transient Boundary Memory}}
-\author{Jaime Melo\\\small Independent Researcher}
-\date{Version 2 draft, 2026}
-\fi
-
-\begin{document}
-
-\ifmdpiclass
-\else
-\twocolumn[
-\maketitle
-\begin{abstract}
-The Entropic Dimensional Framework (EDF) is a pregeometric proposal in which finite phase resolution and information-reducing projections precede effective geometric dynamics. This Version 2 replaces the previously assumed twelve-sector kernel by a conditional closure derivation. A finite phase resolver with simple spectrum and a transitive cyclic traversal generate the complete matrix algebra $M_k(\C)$, so the dynamic closure capacity is $C(k)=k^2$. Applying a separately stated Fibonacci Compatibility Condition, $F_k=C(k)$, gives $F_k=k^2$; the classification of Fibonacci perfect powers then selects the unique nontrivial solution $k=12$. Nonprimitive traversals are shown to generate the exact block algebra $\bigoplus_{\alpha=1}^{d}M_{k/d}(\C)$, with $d=\gcd(k,r)$ and capacity $C_r(k)=k^2/d$. For $k=12$, the Chinese remainder theorem further gives $\Z_{12}\cong\Z_3\times\Z_4$ and $\C^{12}\cong\C^3\otimes\C^4$. These results are used to repair the seven theorem statements of EDF: solitonic residues, triplication, twelve-fold informational quantization, braid closure, closure-capacity scaling, ultraviolet convergence, and entropy descent. A stochastic realization separates structural closure from environmental selection, while exact Schur reduction shows that a transient state may disappear from the explicit final description and remain encoded in effective boundary dynamics. The article distinguishes proved conditional mathematics from EDF-to-physics identifications that remain open to empirical test.
-\end{abstract}
-\noindent\textbf{Keywords:} finite phase space; dynamic closure; Weyl algebra; Fibonacci numbers; cyclic groups; Schur complement; metastability; coarse graining; emergent geometry
-\vspace{1em}
-]
-\fi
-
-% ================================================================
-\section{Introduction}
-
-The Entropic Dimensional Framework (EDF) was introduced as a pregeometric model in which effective geometry and dynamics arise through a hierarchy of information-reducing maps rather than being imposed on an already continuous spacetime \cite{meloV1}. The first formulation organized the proposal around seven named results: soliton generation, soliton triplication, twelve-fold quantization, twelve-crossing confinement, writhe-bounded gravity, ultraviolet finiteness, and an entropic-arrow hierarchy. Subsequent mathematical and computational work showed that several of those statements contained two different logical layers: a mathematically controlled finite-structure problem, and a further identification of that structure with a physical observable. The present revision separates these layers>
-\begin{equation}
-\text{phase dynamics}
-\longrightarrow
-\text{operator closure}
-\longrightarrow
-C(k)
-\longrightarrow
-\text{compatibility}
-\longrightarrow
-k,
-\end{equation}
-rather than a search for consequences of a preselected value.
-
-The finite shift--phase algebra used below belongs to the standard theory of Schwinger and Weyl operators on finite-dimensional Hilbert spaces \cite{marchiolli2013,bertlmann2008,vourdas2004}. The arithmetic step uses the theorem of Bugeaud, Mignotte, and Siksek that the only perfect powers in the Fibonacci sequence are $0,1,8,$ and $144$ \cite{bugeaud2006}. The conjunction of these two ingredients is specific to EDF only through the compatibility condition introduced in Sec.~\ref{sec:fc}. The manuscript does not attempt to derive the ubiquity or origin of Fibonacci o²È="25…¹•™™•Ñ¥Ù”Íåµµ•ÑÉä¸()ÐÑ¡”‘å¹…µ¥…°±•Ù•°°Ñ¡•½É•´µ½µÁ…Ñ¥‰±”ÍÑ½¡…ÍÑ¥ŒÍ•±•Ñ¥½¸±•…Ù•ÌÑ¡”ÍÑÉÕÑÕÉ…°é•É¼Õ¹¡…¹•Ý¡¥±”µ½‘¥™å¥¹œÁ…Ñ¡Ý…åÌ°…¹M¡ÕÈÉ•‘ÕÑ¥½¸ÁÉ½Ù•ÌÑ¡…Ð•±¥µ¥¹…Ñ•ÑÉ…¹Í¥•¹ÐÍÑ…Ñ•Ì…¸É•µ…¥¸•¹½‘•¥¸•™™•Ñ¥Ù”‰½Õ¹‘…Éä‘å¹…µ¥Ì¸Q¡¥ÌÍÕÁÁ±¥•Ì„µ…Ñ¡•µ…Ñ¥…±±ä½¹ÑÉ½±±•™½É´½˜Ñ¡”‰É½…‘•ÈÁÉ¥¹¥Á±”Ñ¡…Ð™¥¹…°µÍÑ…Ñ”…‰Í•¹”¹••¹½Ð¥µÁ±äÁ…Ñ¡Ý…ä¥ÉÉ•±•Ù…¹”¸()Q¡”É•µ…¥¹¥¹œÁ¡åÍ¥…°ÁÉ½É…´¥Ì½ÉÉ•ÍÁ½¹‘¥¹±äÁÉ•¥Í”¸µÕÍÐ‘•É¥Ù”Ñ¡”µ…ÁÌ™É½´¥ÑÌ™¥¹¥Ñ”±½ÍÕÉ”Ñ¼½‰Í•ÉÙ…‰±”Á¡…Í”É•ÕÉÉ•¹”°•¹•É…Ñ¥½¸µ‘•Á•¹‘•¹ÐÁ…ÉÑ¥±”‘…Ñ„°½¹™¥¹•µ•¹Ð‘å¹…µ¥Ì°É…Ù¥Ñ…Ñ¥½¹…°½ÕÁ±¥¹œ°Õ±ÑÉ…Ù¥½±•ÐÉ•Õ±…Ñ¥½¸°…¹„Á¡åÍ¥…°•¹ÑÉ½ÁäµÑ¥µ”¡¥•É…É¡ä¸Q¡”µ…Ñ¡•µ…Ñ¥…°™É…µ•Ý½É¬‘•Ù•±½Á•¡•É”‘½•Ì¹½ÐÁÉ”µ•µÁÐÑ¡½Í”Ñ•ÍÑÌì¥Ð‘•™¥¹•ÌÑ¡•´¸(((”€ôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôô)qÍ•Ñ¥½¸©í½‘”…¹É•Á½Í¥Ñ½Éä…Ù…¥±…‰¥±¥Ñåô()Q¡”½µÁ±•Ñ”q•µÁ¡íå¹…µ¥Œ±½ÍÕÉ”9½Ñ•‰½½­ô¥Ìµ…¥¹Ñ…¥¹•…ÌÑ¡”½µÁÕÑ…Ñ¥½¹…°É•Á½Í¥Ñ½Éä…½µÁ…¹å¥¹œÑ¡¥ÌY•ÉÍ¥½¸´Èµ…¹ÕÍÉ¥ÁÐ¸Q¡”É•Á½Í¥Ñ½Éä½¹Ñ…¥¹Ì¹ÑÉ¥•Ì€ÀÄ´´ÄØ°…±°•á•ÕÑ…‰±”AåÑ¡½¸•ÉÑ¥™¥…Ñ•Ì°µ…¡¥¹”µÉ•…‘…‰±”½ÕÑÁÕÐÑ…‰±•Ì°Ñ¡•½É•Ñ¥…°¹½Ñ•Ì°É½‰ÕÍÑ¹•ÍÌ…¹¹Õ±°½¹ÑÉ½±Ì°…±Ñ•É¹…Ñ¥Ù”µÍÑÉÕÑÕÉ”Ñ•ÍÑÌ°Ñ¡”Ñ¡•½É•´µÉ•Á…¥È±•‘•È°…¹Ñ¡”ÁÉ•Í•¹Ðq1…Q•aíôÍ½ÕÉ”¸!¥ÍÑ½É¥…°•áÁ±½É…Ñ½Éä™½ÉµÕ±…Ñ¥½¹Ì…¹±…¥µÌÉ•©•Ñ•‰ä±…Ñ•È™…±Í¥™¥…Ñ¥½¸Ñ•ÍÑÌ…É”É•Ñ…¥¹•¥¸…¸…É¡¥Ù”É…Ñ¡•ÈÑ¡…¸‘•±•Ñ•¸Q¡”É•Á½Í¥Ñ½Éä¥Ì½É…¹¥é•Í¼Ñ¡…Ð…¹…±åÑ¥Œ±…¥µÌ¥¸Ñ¡”…ÉÑ¥±”…¸‰”ÑÉ…•Ñ¼¥¹‘•Á•¹‘•¹Ð¹Õµ•É¥…°•ÉÑ¥™¥…Ñ•ÌÝ¥Ñ¡½ÕÐµ…­¥¹œÑ¡”…ÉÑ¥±”É•ÁÉ½‘Õ”Ñ¡”¹½Ñ•‰½½¬¡É½¹½±½ä¸()Q¡”ÁÕ‰±¥Œ¥Ñ!ÕˆÉ•Á½Í¥Ñ½ÉäUI0Ý¥±°‰”¥¹Í•ÉÑ•¥¸Ñ¡”…É¡¥Ù…°Ù•ÉÍ¥½¸½˜Ñ¡”µ…¹ÕÍÉ¥ÁÐ…™Ñ•È‘•Á½Í¥Ñ¥½¸¸Q¡”É•Á½Í¥Ñ½ÉäÁ…­…”‘¥ÍÑÉ¥‰ÕÑ•Ý¥Ñ Ñ¡”ÁÉ•Í•¹Ð‘É…™Ð¥Ì…±É•…‘ä…ÉÉ…¹•¥¸¥Ñ!ÕˆµÉ•…‘ä™½É´…¹¥¹±Õ‘•Ì„I5°¥Ñ…Ñ¥½¸µ•Ñ…‘…Ñ„°‘•Á•¹‘•¹äÍÁ•¥™¥…Ñ¥½¸°…¹É•ÁÉ½‘Õ¥‰¥±¥Ñä¥¹‘•à¸((”€ôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôôô)q‰•¥¹íÑ¡•‰¥‰±¥½É…Á¡åõìäåô()q‰¥‰¥Ñ•µíµ•±½XÅô)5•±¼°(¸)q•µÁ¡íQ¡”¹ÑÉ½Á¥Œ¥µ•¹Í¥½¹…°É…µ•Ý½É¬°Y•ÉÍ¥½¸€Åô¸)AÉ•ÁÉ¥¹ÑÌ¹½Éœ€ ÈÀÈÔ¤°µ…¹ÕÍÉ¥ÁÐ€ÈÀÈÔÄÈ¸ÈØÔÈ¸()q‰¥‰¥Ñ•µí¹¥•±Í•¸ÈÀÀÁô)9¥•±Í•¸°4¸¸ì¡Õ…¹œ°$¸0¸)q•µÁ¡íEÕ…¹ÑÕ´½µÁÕÑ…Ñ¥½¸…¹EÕ…¹ÑÕ´%¹™½Éµ…Ñ¥½¹ô¸)…µ‰É¥‘”U¹¥Ù•ÉÍ¥ÑäAÉ•ÍÌ°…µ‰É¥‘”€ ÈÀÀÀ¤¸()q‰¥‰¥Ñ•µíµ…É¡¥½±±¤ÈÀÄÍô)5…É¡¥½±±¤°4¸¸ì5•¹‘½¹qíõ„°@¸¸4¸¸)Q¡•½É•Ñ¥…°™½ÉµÕ±…Ñ¥½¸½˜™¥¹¥Ñ”µ‘¥µ•¹Í¥½¹…°‘¥ÍÉ•Ñ”Á¡…Í”ÍÁ…•Ìè%$¸=¸Ñ¡”Õ¹•ÉÑ…¥¹ÑäÁÉ¥¹¥Á±”™½ÈM¡Ý¥¹•ÈÕ¹¥Ñ…Éä½Á•É…Ñ½ÉÌ¸)q•µÁ¡í¹¸¸A¡åÌ¹ôqÑ•áÑ‰™ìÌÌÙô°€ÜØ´´äÜ€ ÈÀÄÌ¤¸)‘½¤èÄÀ¸ÄÀÄØ½¨¹…½À¸ÈÀÄÌ¸ÀÔ¸ÀÀä¸()q‰¥‰¥Ñ•µí‰•ÉÑ±µ…¹¸ÈÀÀáô)	•ÉÑ±µ…¹¸°H¸¸ì-É…µµ•È°@¸)	±½ Ù•Ñ½ÉÌ™½ÈÅÕ‘¥ÑÌ¸)q•µÁ¡í(¸A¡åÌ¸è5…Ñ ¸Q¡•½È¹ôqÑ•áÑ‰™ìÐÅô°€ÈÌÔÌÀÌ€ ÈÀÀà¤¸)‘½¤èÄÀ¸ÄÀàà¼ÄÜÔÄ´àÄÄÌ¼ÐÄ¼ÈÌ¼ÈÌÔÌÀÌ¸()q‰¥‰¥Ñ•µíÙ½ÕÉ‘…ÌÈÀÀÑô)Y½ÕÉ‘…Ì°¸)EÕ…¹ÑÕ´ÍåÍÑ•µÌÝ¥Ñ ™¥¹¥Ñ”!¥±‰•ÉÐÍÁ…”¸)q•µÁ¡íI•À¸AÉ½œ¸A¡åÌ¹ôqÑ•áÑ‰™ìØÝô°€ÈØÜ´´ÌÈÀ€ ÈÀÀÐ¤¸)‘½¤èÄÀ¸ÄÀàà¼ÀÀÌÐ´ÐààÔ¼ØÜ¼Ì½HÀÌ¸()q‰¥‰¥Ñ•µíÙ½ÕÉ‘…ÌÈÀÀÍô)Y½ÕÉ‘…Ì°¸)…Ñ½É¥é…Ñ¥½¸¥¸™¥¹¥Ñ”ÅÕ…¹ÑÕ´ÍåÍÑ•µÌ¸)q•µÁ¡í(¸A¡åÌ¸è5…Ñ ¸•¸¹ôqÑ•áÑ‰™ìÌÙô°€ÔØÐÔ´´ÔØÔÜ€ ÈÀÀÌ¤¸)‘½¤èÄÀ¸ÄÀàà¼ÀÌÀÔ´ÐÐÜÀ¼ÌØ¼ÈÀ¼ÌÄä¸()q‰¥‰¥Ñ•µí‰Õ•…ÕÈÀÀÙô)	Õ•…Õ°d¸ì5¥¹½ÑÑ”°4¸ìM¥­Í•¬°L¸)±…ÍÍ¥…°…¹µ½‘Õ±…È…ÁÁÉ½…¡•ÌÑ¼•áÁ½¹•¹Ñ¥…°¥½Á¡…¹Ñ¥¹”•ÅÕ…Ñ¥½¹Ì$¸¥‰½¹…¤…¹1Õ…ÌÁ•É™•ÐÁ½Ý•ÉÌ¸)q•µÁ¡í¹¸¸5…Ñ ¹ôqÑ•áÑ‰™ìÄØÍô°€äØä´´ÄÀÄà€ ÈÀÀØ¤¸)‘½¤èÄÀ¸ÐÀÀÜ½…¹¹…±Ì¸ÈÀÀØ¸ÄØÌ¸äØä¸()q‰¥‰¥Ñ•µí¡½Á­¥¹ÌÈÀÄÁô)!½Á­¥¹Ì°¸¸ìMÑ¥±±¥¹•È°¸ ¸ìQ½ÉÅÕ…Ñ¼°L¸)MÁ¡•É¥…°½‘•Ì°µ…á¥µ…°±½…°Á…­¥¹œ‘•¹Í¥Ñä°…¹Ñ¡”½±‘•¸É…Ñ¥¼¸)…Éa¥ØèÄÀÀÌ¸ÌØÀÐ€ ÈÀÄÀ¤¸()q‰¥‰¥Ñ•µíÍ•ÉÉ”ÄäÜÝô)M•ÉÉ”°(¸µ@¸)q•µÁ¡í1¥¹•…ÈI•ÁÉ•Í•¹Ñ…Ñ¥½¹Ì½˜¥¹¥Ñ”É½ÕÁÍô¸)É…‘Õ…Ñ”Q•áÑÌ¥¸5…Ñ¡•µ…Ñ¥Ì€ÐÈ°MÁÉ¥¹•È°9•Üe½É¬€ ÄäÜÜ¤¸()q‰¥‰¥Ñ•µí‘É…é¥¸Ääàåô)É…é¥¸°@¸¸ì)½¡¹Í½¸°H¸L¸)q•µÁ¡íM½±¥Ñ½¹Ìè¸%¹ÑÉ½‘ÕÑ¥½¹ô¸)…µ‰É¥‘”U¹¥Ù•ÉÍ¥ÑäAÉ•ÍÌ°…µ‰É¥‘”€ Ääàä¤¸()q‰¥‰¥Ñ•µí…‰±½Ý¥ÑèÄäàÅô)‰±½Ý¥Ñè°4¸(¸ìM•ÕÈ° ¸)q•µÁ¡íM½±¥Ñ½¹Ì…¹Ñ¡”%¹Ù•ÉÍ”M…ÑÑ•É¥¹œQÉ…¹Í™½Éµô¸)M%4°A¡¥±…‘•±Á¡¥„€ ÄäàÄ¤¸()q‰¥‰¥Ñ•µí‰¥Éµ…¸ÄäÜÑô)	¥Éµ…¸°(¸L¸)q•µÁ¡í	É…¥‘Ì°1¥¹­Ì°…¹5…ÁÁ¥¹œ±…ÍÌÉ½ÕÁÍô¸)¹¹…±Ì½˜5…Ñ¡•µ…Ñ¥ÌMÑÕ‘¥•Ì€àÈ°AÉ¥¹•Ñ½¸U¹¥Ù•ÉÍ¥ÑäAÉ•ÍÌ€ ÄäÜÐ¤¸()q‰¥‰¥Ñ•µí­…ÍÍ•°ÈÀÀáô)-…ÍÍ•°°¸ìQÕÉ…•Ø°X¸)q•µÁ¡í	É…¥É½ÕÁÍô¸)É…‘Õ…Ñ”Q•áÑÌ¥¸5…Ñ¡•µ…Ñ¥Ì€ÈÐÜ°MÁÉ¥¹•È€ ÈÀÀà¤¸)‘½¤èÄÀ¸ÄÀÀÜ¼äÜà´À´ÌàÜ´ØàÔÐà´ä¸()q‰¥‰¥Ñ•µíÝ¡¥Ñ”ÄäØåô)]¡¥Ñ”°(¸ ¸)M•±˜µ1¥¹­¥¹œ…¹Ñ¡”…ÕÍÌ%¹Ñ•É…°¥¸!¥¡•È¥µ•¹Í¥½¹Ì¸)q•µÁ¡í´¸(¸5…Ñ ¹ôqÑ•áÑ‰™ìäÅô°€ØäÌ´´ÜÈà€ ÄäØä¤¸)‘½¤èÄÀ¸ÈÌÀÜ¼ÈÌÜÌÌÐà¸()q‰¥‰¥Ñ•µí™Õ±±•ÈÄäÜÅô)Õ±±•È°¸¸)Q¡”]É¥Ñ¡¥¹œ9Õµ‰•È½˜„MÁ…”ÕÉÙ”¸)q•µÁ¡íAÉ½Œ¸9…Ñ°¸…¸M¤¸UMôqÑ•áÑ‰™ìØáô°€àÄÔ´´àÄä€ ÄäÜÄ¤¸)‘½¤èÄÀ¸ÄÀÜÌ½Á¹…Ì¸Øà¸Ð¸àÄÔ¸()q‰¥‰¥Ñ•µíÝ•¥¹‰•ÉœÄäØÁô)]•¥¹‰•Éœ°L¸)!¥ µ¹•Éä	•¡…Ù¥½È¥¸EÕ…¹ÑÕ´¥•±Q¡•½Éä¸)q•µÁ¡íA¡åÌ¸I•Ø¹ôqÑ•áÑ‰™ìÄÄáô°€àÌà´´àÐä€ ÄäØÀ¤¸)‘½¤èÄÀ¸ÄÄÀÌ½A¡åÍI•Ø¸ÄÄà¸àÌà¸()q‰¥‰¥Ñ•µí½Ù•ÈÈÀÀÙô)½Ù•È°P¸4¸ìQ¡½µ…Ì°(¸¸)q•µÁ¡í±•µ•¹ÑÌ½˜%¹™½Éµ…Ñ¥½¸Q¡•½Éåô°€É¹•¸)]¥±•ä°!½‰½­•¸€ ÈÀÀØ¤¸)‘½¤èÄÀ¸ÄÀÀÈ¼ÀÐÜÄÜÐààÉ`¸()q‰¥‰¥Ñ•µí©…å¹•ÌÄäÔÝô))…å¹•Ì°¸P¸)%¹™½Éµ…Ñ¥½¸Q¡•½Éä…¹MÑ…Ñ¥ÍÑ¥…°5•¡…¹¥Ì¸)q•µÁ¡íA¡åÌ¸I•Ø¹ôqÑ•áÑ‰™ìÄÀÙô°€ØÈÀ´´ØÌÀ€ ÄäÔÜ¤¸)‘½¤èÄÀ¸ÄÄÀÌ½A¡åÍI•Ø¸ÄÀØ¸ØÈÀ¸()q‰¥‰¥Ñ•µí™…±…Í¼ÈÀÈÅô)…±…Í¼°¸ìÍÁ½Í¥Ñ¼°4¸)1½…°‘•Ñ…¥±•‰…±…¹”…É½ÍÌÍ…±•ÌèÉ½´‘¥™™ÕÍ¥½¹ÌÑ¼©ÕµÀÁÉ½•ÍÍ•Ì…¹‰•å½¹¸)q•µÁ¡íA¡åÌ¸I•Ø¸ôqÑ•áÑ‰™ìÄÀÍô°€ÀÐÈÄÄÐ€ ÈÀÈÄ¤¸)‘½¤èÄÀ¸ÄÄÀÌ½A¡åÍI•Ù¸ÄÀÌ¸ÀÐÈÄÄÐ¸()q‰¥‰¥Ñ•µíµ•å•ÈÄäàåô)5•å•È°¸¸)MÑ½¡…ÍÑ¥Œ½µÁ±•µ•¹Ñ…Ñ¥½¸°U¹½ÕÁ±¥¹œ5…É­½Ø¡…¥¹Ì°…¹Ñ¡”Q¡•½Éä½˜9•…É±äI•‘Õ¥‰±”MåÍÑ•µÌ¸)q•µÁ¡íM%4I•Ø¹ôqÑ•áÑ‰™ìÌÅô°€ÈÐÀ´´ÈÜÈ€ Ääàä¤¸)‘½¤èÄÀ¸ÄÄÌÜ¼ÄÀÌÄÀÔÀ¸()q‰¥‰¥Ñ•µí‘½É™±•ÈÈÀÄÍô)p‰½É™±•È°¸ì	Õ±±¼°¸)-É½¸I•‘ÕÑ¥½¸½˜É…Á¡ÌÝ¥Ñ ÁÁ±¥…Ñ¥½¹ÌÑ¼±•ÑÉ¥…°9•ÑÝ½É­Ì¸)q•µÁ¡í%QÉ…¹Ì¸¥ÉÕ¥ÑÌMåÍÐ¸%ôqÑ•áÑ‰™ìØÁô°€ÄÔÀ´´ÄØÌ€ ÈÀÄÌ¤¸)‘½¤èÄÀ¸ÄÄÀä½QM$¸ÈÀÄÈ¸ÈÈÄÔÜàÀ¸()q‰¥‰¥Ñ•µí¹åÙ±ÐÄääÕô)9påÙ±Ð°(¸)Q¡”=ÍÑÝ…±IÕ±”½˜MÑ…•Ì¸)q•µÁ¡íÉåÍÐ¸I•Ì¸Q•¡¹½°¹ôqÑ•áÑ‰™ìÌÁô°€ÐÐÌ´´ÐÐä€ ÄääÔ¤¸)‘½¤èÄÀ¸ÄÀÀÈ½É…Ð¸ÈÄÜÀÌÀÀÐÀÈ¸()q‰¥‰¥Ñ•µíÙ¥±±…¥¸ÄäàÁô)Y¥±±…¥¸°(¸ì	¥‘…Õà°H¸ì…ÉÑ½¸°(¸µ@¸ì½¹Ñ”°H¸)=É‘•È…Ì…¸•™™•Ð½˜‘¥Í½É‘•È¸)q•µÁ¡í(¸A¡åÍ¥ÅÕ•ôqÑ•áÑ‰™ìÐÅô°€ÄÈØÌ´´ÄÈÜÈ€ ÄäàÀ¤¸)‘½¤èÄÀ¸ÄÀÔÄ½©Á¡åÌèÀÄäàÀÀÀÐÄÀÄÄÀÄÈØÌÀÀ¸()q‰¥‰¥Ñ•µí©¥…¹œÈÀÈÁô))¥…¹œ°h¸ìEÕ…¸°L¸ìaÔ°8¸ì!”°0¸ì9¤°d¸)É½ÝÑ µ½‘•Ì½˜ÅÕ…Í¥ÉåÍÑ…±Ì¥¹Ù½±Ù¥¹œ¥¹Ñ•Éµ•‘¥…Ñ”Á¡…Í•Ì…¹„µÕ±Ñ¥ÍÑ•À‰•¡…Ù¥½ÈÍÑÕ‘¥•‰äÁ¡…Í”™¥•±ÉåÍÑ…°µ½‘•°¸)q•µÁ¡íA¡åÌ¸I•Ø¸5…Ñ•È¹ôqÑ•áÑ‰™ìÑô°€ÀÈÌÐÀÌ€ ÈÀÈÀ¤¸)‘½¤èÄÀ¸ÄÄÀÌ½A¡åÍI•Ù5…Ñ•É¥…±Ì¸Ð¸ÀÈÌÐÀÌ¸()q‰¥‰¥Ñ•µí™…å•¸ÈÀÈÑô)…å•¸°¸ì¥±¥½¸°0¸ì½™™¤°¸ìMµ…±±•¹‰ÕÉœ°¸)EÕ…Í¥ÉåÍÑ…°½˜	¥¹…Éä!…ÉMÁ¡•É•Ì½¸„A±…¹”MÑ…‰¥±¥é•‰ä½¹™¥ÕÉ…Ñ¥½¹…°¹ÑÉ½Áä¸)q•µÁ¡íA¡åÌ¸I•Ø¸1•ÑÐ¹ôqÑ•áÑ‰™ìÄÌÉô°€ÀÐàÈÀÈ€ ÈÀÈÐ¤¸)‘½¤èÄÀ¸ÄÄÀÌ½A¡åÍI•Ù1•ÑÐ¸ÄÌÈ¸ÀÐàÈÀÈ¸(()q‰¥‰¥Ñ•µí½¹Í…•ÈÄäÌÅô)=¹Í…•È°0¸)I•¥ÁÉ½…°I•±…Ñ¥½¹Ì¥¸%ÉÉ•Ù•ÉÍ¥‰±”AÉ½•ÍÍ•Ì¸$¸)q•µÁ¡íA¡åÌ¸I•Ø¹ôqÑ•áÑ‰™ìÌÝô°€ÐÀÔ´´ÐÈØ€ ÄäÌÄ¤¸)‘½¤èÄÀ¸ÄÄÀÌ½A¡åÍI•Ø¸ÌÜ¸ÐÀÔ¸()q‰¥‰¥Ñ•µí©­¼Äääáô))½É‘…¸°H¸ì-¥¹‘•É±•¡É•È°¸ì=ÑÑ¼°¸)Q¡”Y…É¥…Ñ¥½¹…°½ÉµÕ±…Ñ¥½¸½˜Ñ¡”½­­•È´µA±…¹¬ÅÕ…Ñ¥½¸¸)q•µÁ¡íM%4(¸5…Ñ ¸¹…°¹ôqÑ•áÑ‰™ìÈåô°€Ä´´ÄÜ€ Äääà¤¸)‘½¤èÄÀ¸ÄÄÌÜ½LÀÀÌØÄÐÄÀäØÌÀÌÌÔä¸()q‰¥‰¥Ñ•µí½ÑÑ¼ÈÀÀÅô)=ÑÑ¼°¸)Q¡”•½µ•ÑÉä½˜¥ÍÍ¥Á…Ñ¥Ù”Ù½±ÕÑ¥½¸ÅÕ…Ñ¥½¹ÌèQ¡”A½É½ÕÌ5•‘¥Õ´ÅÕ…Ñ¥½¸¸)q•µÁ¡í½µµÕ¸¸A…ÉÑ¥…°¥™™•È¸ÅÔ¹ôqÑ•áÑ‰™ìÈÙô°€ÄÀÄ´´ÄÜÐ€ ÈÀÀÄ¤¸)‘½¤èÄÀ¸ÄÀàÄ½A´ÄÀÀÀÀÈÈÐÌ¸(()q‰¥‰¥Ñ•µí±¥™Í¡¥ÑèÄääÝô)1¥™Í¡¥Ñè°H¸ìA•ÑÉ¥ °¸4¸)Q¡•½É•Ñ¥…°5½‘•°™½È…É…‘…ä]…Ù•ÌÝ¥Ñ 5Õ±Ñ¥Á±”µÉ•ÅÕ•¹ä½É¥¹œ¸)q•µÁ¡íA¡åÌ¸I•Ø¸1•ÑÐ¹ôqÑ•áÑ‰™ìÜåô°€ÄÈØÄ´´ÄÈØÐ€ ÄääÜ¤¸)‘½¤èÄÀ¸ÄÄÀÌ½A¡åÍI•Ù1•ÑÐ¸Üä¸ÄÈØÄ¸()q‰¥‰¥Ñ•µí¥Ý…µ¤ÈÀÄÕô)%Ý…µ¤°L¸ì%Í¡¥µ…Í„°P¸)½‘•…½¹…°ÅÕ…Í¥ÉåÍÑ…°¥¸5¸µ‰…Í•ÅÕ…Ñ•É¹…Éä…±±½åÌ½¹Ñ…¥¹¥¹œÈ°9¤…¹M¤¸)q•µÁ¡íA¡¥±½Ì¸5…œ¸1•ÑÐ¹ôqÑ•áÑ‰™ìäÕô°€ÈÈä´´ÈÌØ€ ÈÀÄÔ¤¸)‘½¤èÄÀ¸ÄÀàÀ¼ÀäÔÀÀàÌä¸ÈÀÄÔ¸ÄÀÌàÌÌÈ¸()q•¹‘íÑ¡•‰¥‰±¥½É…Á¡åô()q•¹‘í‘½Õµ•¹Ñô(
