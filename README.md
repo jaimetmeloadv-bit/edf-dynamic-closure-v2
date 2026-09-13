@@ -52,7 +52,7 @@ F_{12}=144=12^2.
 The notebook also verifies the nonprimitive subclosure relation
 
 ```math
-\operatorname{alg}(Z,X^r)
+\text{alg}(Z,X^r)
 \cong
 \bigoplus_{\alpha=1}^{d}M_{k/d}(\mathbb C),
 \qquad d=\gcd(k,r),
