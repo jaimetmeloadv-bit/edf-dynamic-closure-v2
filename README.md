@@ -21,7 +21,7 @@ The repository is intended to stand as an independent computational record. It i
 
 For a resolved finite phase space with primitive transitive traversal, the notebook verifies the full matrix-algebra closure
 
-\[
+```math
 \text{resolved finite phase}
 \longrightarrow
 \text{primitive transitive traversal}
@@ -29,46 +29,46 @@ For a resolved finite phase space with primitive transitive traversal, the noteb
 M_k(\mathbb C)
 \longrightarrow
 C(k)=k^2.
-\]
+```
 
 EDF then studies the separately stated Fibonacci Compatibility Condition
 
-\[
+```math
 F_k=C(k),
-\]
+```
 
 which gives
 
-\[
+```math
 F_k=k^2.
-\]
+```
 
 For the tested nontrivial sector range, the exact equality occurs at
 
-\[
+```math
 F_{12}=144=12^2.
-\]
+```
 
 The notebook also verifies the nonprimitive subclosure relation
 
-\[
+```math
 \operatorname{alg}(Z,X^r)
 \cong
 \bigoplus_{\alpha=1}^{d}M_{k/d}(\mathbb C),
 \qquad d=\gcd(k,r),
-\]
+```
 
 with generated dimension
 
-\[
+```math
 C_r(k)=\frac{k^2}{d}.
-\]
+```
 
-For \(k=12\), the accessible dimensions are
+For $k=12$, the accessible dimensions are
 
-\[
+```math
 12,\;24,\;36,\;48,\;72,\;144.
-\]
+```
 
 ---
 
@@ -76,12 +76,12 @@ For \(k=12\), the accessible dimensions are
 
 | Result | Notebook source | Representative output | Status |
 |---|---:|---:|---|
-| Fibonacci compatibility minimum | Entries 02–03 | detected sector \(k=12\) | exact residual minimum |
-| Pair-count equality | Entry 02 | \(F_{12}=12^2=144\) | exact |
-| Local-pathway robustness | Entry 03 | \(P(k=12)=0.194620\) at \(\beta=2\), noise = 0.15 | stochastic simulation |
-| Transient boundary-memory model | Entry 10 | baseline \(P(\mathrm{commit}\to k=12)=0.480253\) | reduced dynamics / numerical evaluation |
-| Schur reduction preservation | Entry 10 | max error \(1.554\times10^{-15}\) | numerical precision |
-| Exact subclosure capacities | Entry 16 | \(12,24,36,48,72,144\) | exact algebra |
+| Fibonacci compatibility minimum | Entries 02–03 | detected sector $k=12$ | exact residual minimum |
+| Pair-count equality | Entry 02 | $F_{12}=12^2=144$ | exact |
+| Local-pathway robustness | Entry 03 | $P(k=12)=0.194620$ at $\beta=2$, noise = 0.15 | stochastic simulation |
+| Transient boundary-memory model | Entry 10 | baseline $P(\mathrm{commit}\to k=12)=0.480253$ | reduced dynamics / numerical evaluation |
+| Schur reduction preservation | Entry 10 | max error $1.554\times10^{-15}$ | numerical precision |
+| Exact subclosure capacities | Entry 16 | $12,24,36,48,72,144$ | exact algebra |
 
 Machine-readable index: [`tables/featured_results.csv`](tables/featured_results.csv).
 
@@ -89,11 +89,11 @@ Machine-readable index: [`tables/featured_results.csv`](tables/featured_results.
 
 The normalized residual
 
-\[
+```math
 B_k=\frac{|F_k-k^2|}{F_k+k^2}
-\]
+```
 
-reaches zero at \(k=12\) for the even-sector scan used in Entries 02–03.
+reaches zero at $k=12$ for the even-sector scan used in Entries 02–03.
 
 ![Fibonacci compatibility residual](figures/structural_residual.svg)
 
@@ -104,11 +104,11 @@ Source: [`notebook/entry_02/dynamic_closure_notebook_entry_02.py`](notebook/entr
 
 Entry 03 replaces all-to-all transitions by the local topology
 
-\[
+```math
 k\leftrightarrow k\pm2,
-\]
+```
 
-and scans structural coupling \(\beta\) against environmental noise. At \(\beta=0\), the model provides the unbiased dynamical control; increasing \(\beta\) tests the influence of the independently specified structural score.
+and scans structural coupling $\beta$ against environmental noise. At $\beta=0$, the model provides the unbiased dynamical control; increasing $\beta$ tests the influence of the independently specified structural score.
 
 ![Local-pathway robustness](figures/local_pathway_robustness.svg)
 
@@ -119,21 +119,21 @@ Source: [`notebook/entry_03/dynamic_closure_notebook_entry_03.py`](notebook/entr
 
 Entry 10 uses the absorbing-process identities
 
-\[
+```math
 N=(-Q)^{-1},\qquad B=NR,
-\]
+```
 
 and the one-state Schur reduction
 
-\[
+```math
 Q_{\mathrm{eff}}
 =Q_{AA}-Q_{Aj}Q_{jj}^{-1}Q_{jA},
-\]
+```
 
-\[
+```math
 R_{\mathrm{eff}}
 =R_A-Q_{Aj}Q_{jj}^{-1}R_j.
-\]
+```
 
 Although transient occupation vanishes asymptotically, expected residence, pathway intervention effects, and Schur-complement boundary terms remain nonzero. For the configured scan, all 35 transient sectors have nonzero expected residence and nonzero boundary footprint; all 32 tested interior non-target interventions produce a positive soft-block effect on the target probability.
 
@@ -142,17 +142,17 @@ Although transient occupation vanishes asymptotically, expected residence, pathw
 Summary data: [`tables/entry10_boundary_memory_summary.csv`](tables/entry10_boundary_memory_summary.csv)  
 Source: [`notebook/entry_10/dynamic_closure_notebook_entry_10.py`](notebook/entry_10/dynamic_closure_notebook_entry_10.py)
 
-### 4. Exact \(k=12\) subclosure classification
+### 4. Exact $k=12$ subclosure classification
 
-For \(U_r=X^r\), Entry 16 classifies every traversal step by
+For $U_r=X^r$, Entry 16 classifies every traversal step by
 
-\[
+```math
 d=\gcd(12,r),\qquad
 \ell=\frac{12}{d},\qquad
 C_r(12)=\frac{144}{d}.
-\]
+```
 
-Primitive steps \(r=1,5,7,11\) generate the full 144-dimensional algebra; nonprimitive steps generate the exact lower-dimensional subclosures shown below.
+Primitive steps $r=1,5,7,11$ generate the full 144-dimensional algebra; nonprimitive steps generate the exact lower-dimensional subclosures shown below.
 
 ![Exact k=12 subclosure classification](figures/k12_subclosure_dimensions.svg)
 
@@ -221,9 +221,9 @@ edf-dynamic-closure-v2/
 
 The repository distinguishes exact or conditional mathematics from proposed EDF-to-physics identifications. In particular:
 
-- the exact \(\mathbb Z_3\) factor does not by itself derive the observed fermion generations;
+- the exact $\mathbb Z_3$ factor does not by itself derive the observed fermion generations;
 - conditional braid closure does not by itself derive QCD confinement;
-- \(C(12)=144\) does not by itself derive Newton's constant;
+- $C(12)=144$ does not by itself derive Newton's constant;
 - finite internal dimension does not by itself establish ultraviolet finiteness;
 - entropy descent in the computational models does not by itself identify the projection hierarchy with physical time.
 
