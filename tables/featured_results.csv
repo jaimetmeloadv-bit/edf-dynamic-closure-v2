@@ -1,0 +1,7 @@
+result,entry,quantity,value,status
+Fibonacci compatibility,02/03,detected sector,k=12,exact residual minimum
+Pair-count equality,02,F_12 vs 12^2,144 = 144,exact
+Local pathway robustness,03,"P(k=12), beta=2, noise=0.15",0.194620,simulation
+Transient boundary memory,10,baseline P(commit to k=12),0.480253,exact reduced dynamics / numerical evaluation
+Schur preservation,10,max absorption-statistics error,1.554e-15,numerical precision
+Subclosure capacities,16,C_r(12) accessible dimensions,"12,24,36,48,72,144",exact algebra
