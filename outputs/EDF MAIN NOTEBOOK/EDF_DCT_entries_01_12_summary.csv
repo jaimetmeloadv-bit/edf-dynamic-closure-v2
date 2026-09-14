@@ -1,0 +1,13 @@
+Entry,Purpose,Main outcome
+01,Null environmental dynamics,Noise alone did not create k=12 preference
+02,Candidate Fibonacci residual,Exact zero at 12; later identified as bounded transform of log defect
+03,Local noisy pathways,Structural preference survived local kinetics and moderate environmental noise
+04,Investigate k^2,Different relation counts yield different Fibonacci matches
+05,Weyl closure,"X and Z generate M_k(C), dimension k^2"
+06,Why phase + shift,Each alone has dimension k; together k^2
+07,Primitive traversal,Traversal derived from phase evolution and primitive recurrence
+08,DCT consolidation,P1-P4 imply k^2; P5 + BMS imply k=12
+09,Defect + selection,Theorem zero separated from stochastic penalty shape
+10,Transient boundary memory,Terminal occupancy vanishes while residence/flux/Schur footprints survive
+11,Robustness/falsification,Structural memory robust; universal positive target assistance falsified
+12,Alternative controls,"Restoring DCT-required operations returns M_k(C), dimension k^2"

@@ -1,0 +1,16 @@
+Entry,Role,V2_location,Purpose
+Entry 01,Null stochastic dynamics,Repository only,Controls claim that environment/noise alone creates k=12
+Entry 02,Exploratory Fibonacci residual,Archive / repository,Historical precursor to final defect D_k
+Entry 03,Local noisy pathways,Repository; one sentence in discussion,Shows structural preference survives local noisy kinetics
+Entry 04,k^2 and alternative counts,Condensed into main text + repository,Supports structural-count derivation
+Entry 05,Weyl closure,Main text core,Derives full M_k(C) closure
+Entry 06,Phase and shift generators,Main text core,Justifies both generators
+Entry 07,Primitive traversal,Main text core,Derives gcd criterion and traversal
+Entry 08,DCT consolidation,Main text core,The theorem spine
+Entry 09,Defect and selection,Condensed main text + repository,Gives theorem-compatible dynamics
+Entry 10,Boundary memory,Main text core dynamic result,Schur reduction and transient memory
+Entry 11,Robustness/falsification,Repository; concise discussion,Shows which stronger causal claims fail
+Entry 12,Alternative structures,One compact main-text paragraph + repository,Shows smaller counts change premises
+Entry 13,Theorem–prediction correspondence,Repository planning layer,Maps DCT to old EDF claims
+Entry 14,Theorem repair,Feeds mature main-text statements,Reconstructed theorem set
+Entry 15,Repository/v2 architecture,Repository,Publication and reproducibility map

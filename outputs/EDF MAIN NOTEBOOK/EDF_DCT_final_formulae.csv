@@ -1,0 +1,27 @@
+Category,Formula,Meaning,Status
+Phase kernel,A_k={exp(2pi i m/k):m in Z_k},Foundational finite cyclic structure,Exact definition
+Phase operator,Z|m>=omega_k^m|m>,Resolved phase generator,Exact
+Primitive evolution,phi_{n+1}=phi_n+Delta phi (mod 2pi),Primitive EDF evolution,Premise
+Kernel-preserving increment,Delta phi=2pi r/k (mod 2pi),Finite-k phase step,Exact conditional lemma
+Orbit length,"L(k,r)=k/gcd(k,r)",Return length,Exact
+Primitive traversal,"gcd(k,r)=1",Full traversal criterion,Exact
+Traversal operator,U_r=X^r,r-step cyclic traversal,Exact
+Shift recovery,"(U_r)^s=X, rs=1 mod k",Primitive-generator equivalence,Exact
+Weyl relation,Z U_r=omega_k^r U_r Z,Phase-traversal relation,Exact
+Weyl basis,W_ab=X^a Z^b,k^2 operator basis,Exact
+Closure algebra,"alg(Z,U_r)=M_k(C)",Full dynamic algebra,Theorem
+Closure capacity,C(k)=k^2,Full operator capacity,Theorem consequence
+Fibonacci compatibility,F_k=C(k)=k^2,EDF compatibility,Premise + consequence
+Arithmetic uniqueness,"F_k=k^2 iff k=12, k>=2",Unique DCT order,Exact BMS-based result
+Primitive generator count,N_primitive(k)=phi(k),Full-cycle steps,Exact
+Defect,D_k=|ln(F_k/k^2)|,Dimensionless mismatch,Exact zero; modeling representation
+Bounded residual,B_k=|F_k-k^2|/(F_k+k^2)=tanh(D_k/2),Bounded defect,Exact identity
+MaxEnt selection,pi_k=e^{-lambda D_k}/Z,Selection family,Inference model
+Detailed-balance rate,W_jk=nu A_jk exp[-lambda(D_k-D_j)/2],Jump-process embedding,Model family
+Fundamental matrix,N=(-Q)^-1,Integrated transient dynamics,Standard exact result
+Residence,tau=mu N,Expected transient residence,Standard exact result
+Absorption matrix,B=NR,Absorption probabilities,Standard exact result
+Intervention,C_j=P12_base-P12_block(j),Target-conditioned sensitivity,Model metric
+Schur generator,Q_eff=Q_AA-Q_Aj Q_jj^-1 Q_jA,Reduced boundary coupling,Exact identity
+Schur sink,R_eff=R_A-Q_Aj Q_jj^-1 R_j,Reduced absorption term,Exact identity
+Boundary footprint,B_j=sqrt(||Delta Q_j||_F^2+||Delta R_j||_F^2),State-elimination memory,Defined diagnostic
