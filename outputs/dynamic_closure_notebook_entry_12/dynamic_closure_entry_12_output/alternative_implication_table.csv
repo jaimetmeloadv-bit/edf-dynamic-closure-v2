@@ -1,0 +1,8 @@
+control,space,closure_witness,consequence
+Remove identity/tracial direction,k^2-1,"diag(1,-1,...)^2 has nonzero trace",Full unital closure regenerates missing direction.
+Remove self-relations,k(k-1),E_ij E_ji = E_ii,Self-relations are regenerated.
+Forget direction,k(k+1)/2,E_ii(E_ij+E_ji)=E_ij,Directed relation is regenerated.
+Forget direction and self-relations,k(k-1)/2,(E_ij+E_ji)^2=E_ii+E_jj,Diagonal/self structure is regenerated.
+Keep only Z,k,No sector traversal,Fails P3.
+Keep only X,k,No resolved phase operator,Fails P1.
+Keep Z and X,generators,ZX=omega XZ,"Weyl closure gives M_k(C), dimension k^2."

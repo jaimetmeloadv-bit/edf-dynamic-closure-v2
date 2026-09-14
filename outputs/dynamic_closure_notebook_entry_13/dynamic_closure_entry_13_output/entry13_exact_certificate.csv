@@ -1,0 +1,11 @@
+check,value,pass
+primitive_steps,"1,5,7,11",True
+phi_12,4,True
+z3_indices,"0,4,8",True
+length3_subclosure_steps,"4,8",True
+braid_word_length,12,True
+braid_final_permutation_identity,1-2-3,True
+pairwise_crossings,"4,4,4",True
+pairwise_linking_numbers,"2.0,2.0,2.0",True
+total_linking,6.0,True
+closure_capacity,144,True

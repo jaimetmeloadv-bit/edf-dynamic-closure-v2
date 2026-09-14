@@ -1,0 +1,6 @@
+premise_id,premise,formal_statement
+P1,Finite cyclic phase resolution,EDF resolves A_k={exp(2*pi*i*m/k):m in Z_k}.
+P2,Homogeneous coherent primitive phase evolution,phi_(n+1)=phi_n+Delta_phi mod 2*pi.
+P3,Primitive recurrence order k,The first complete return occurs after exactly k updates.
+P4,Unital associative dynamic closure,Required EDF operations close under composition in the smallest unital associative complex operator algebra.
+P5,Fibonacci compatibility,Exact EDF structural compatibility requires F_k=C(k).

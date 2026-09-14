@@ -1,0 +1,2 @@
+word,word_length,final_permutation_identity,number_closed_components,pairwise_link_sum,ribbon_self_linking_computed
+(sigma1 sigma2)^6,12,True,3,6.0,False
