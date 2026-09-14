@@ -1,6 +1,0 @@
-k,F_k,k_squared,F_k_equals_k_squared
-0,0,0,True
-1,1,1,True
-2,1,4,False
-6,8,36,False
-12,144,144,True

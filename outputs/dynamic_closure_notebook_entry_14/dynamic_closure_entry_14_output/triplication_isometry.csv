@@ -1,2 +1,0 @@
-input_norm_sq,output_norm_sq,norm_sq_error,branch_0_norm_sq,branch_1_norm_sq,branch_2_norm_sq,sum_branch_norm_sq
-0.9999999999999998,1.0,2.220446049250313e-16,0.33333333333333337,0.33333333333333337,0.3333333333333334,1.0000000000000002

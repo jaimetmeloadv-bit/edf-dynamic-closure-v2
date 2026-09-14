@@ -1,9 +1,0 @@
-k,candidate,declared_dimension,basis_rank,contains_identity,explicit_product_witness_in_declared_span,multiplicatively_closed_under_witness,unital_associative_closure_dimension,full_k2_dimension,expands_to_full_k2,dct_status,reason
-6,full_ordered_self,36,36,True,True,True,36,36,True,PASS,Already the full unital associative operator algebra.
-6,traceless,35,35,False,False,False,36,36,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
-6,ordered_no_self,30,30,False,False,False,36,36,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
-6,unordered_self,21,21,True,False,False,36,36,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
-6,unordered_no_self,15,15,False,False,False,36,36,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
-6,phase_only_linear,6,6,True,True,True,6,36,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
-6,shift_only_linear,6,6,True,True,True,6,36,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
-6,phase_plus_shift_DCT,2,2,False,False,False,36,36,True,PASS,Required generators Z and X span the k^2 Weyl basis.

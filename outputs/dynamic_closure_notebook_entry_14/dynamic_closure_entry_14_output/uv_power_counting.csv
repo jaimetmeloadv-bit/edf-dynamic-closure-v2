@@ -1,4 +1,0 @@
-name,D,sigma,n,alpha,radial_exponent,criterion_nalpha_gt_DplusSigma,I_R10,I_R100,I_R1000,I_R10000
-convergent,4,0.0,2,2.5,-2.0,True,0.9,0.99,0.999,0.9999
-borderline_log,4,0.0,2,2.0,-1.0,False,2.302585092994046,4.605170185988092,6.907755278982137,9.210340371976184
-divergent,4,0.0,2,1.5,0.0,False,9.0,99.0,999.0,9999.0

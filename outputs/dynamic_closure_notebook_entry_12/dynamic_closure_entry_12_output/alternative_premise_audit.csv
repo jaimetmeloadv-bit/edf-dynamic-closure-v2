@@ -1,7 +1,0 @@
-candidate,count,P1,P2,P3,P4,required_change,Fibonacci_match
-full_ordered_self,k^2,PASS,PASS,PASS,PASS,None.,k=12
-traceless,k^2-1,PASS,PASS,PASS,FAIL,Replace full unital operator closure by a traceless or normalized-state coordinate space.,none
-ordered_no_self,k(k-1),FAIL,PASS,PASS,FAIL,Delete self/identity relations despite their regeneration under composition.,none
-unordered_self,k(k+1)/2,PASS,PASS,FAIL,FAIL,Identify j->k with k->j and replace directed operator composition by unordered/symmetric relations.,k=10
-unordered_no_self,k(k-1)/2,FAIL,PASS,FAIL,FAIL,Forget direction and remove self/identity relations.,k=2
-single_generator_linear,k,FAIL if shift-only,PASS,FAIL if phase-only,PASS as subalgebra,Discard either Z or X. Keeping both restores k^2.,k=5

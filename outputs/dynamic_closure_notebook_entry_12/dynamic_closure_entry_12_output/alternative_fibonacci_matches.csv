@@ -1,7 +1,0 @@
-candidate,count_formula,exact_match_indices,match_count
-full_ordered_self,k^2,12,1
-traceless,k^2-1,none,0
-ordered_no_self,k(k-1),none,0
-unordered_self,k(k+1)/2,10,1
-unordered_no_self,k(k-1)/2,2,1
-single_generator,k,5,1
