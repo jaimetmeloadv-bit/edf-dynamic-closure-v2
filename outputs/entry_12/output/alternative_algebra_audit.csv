@@ -1,0 +1,89 @@
+k,candidate,declared_dimension,basis_rank,contains_identity,explicit_product_witness_in_declared_span,multiplicatively_closed_under_witness,unital_associative_closure_dimension,full_k2_dimension,expands_to_full_k2,dct_status,reason
+2,full_ordered_self,4,4,True,True,True,4,4,True,PASS,Already the full unital associative operator algebra.
+2,traceless,3,3,False,False,False,4,4,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+2,ordered_no_self,2,2,False,False,False,4,4,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+2,unordered_self,3,3,True,False,False,4,4,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+2,unordered_no_self,1,1,False,False,False,2,4,False,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+2,phase_only_linear,2,2,True,True,True,2,4,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+2,shift_only_linear,2,2,True,True,True,2,4,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+2,phase_plus_shift_DCT,2,2,False,False,False,4,4,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+3,full_ordered_self,9,9,True,True,True,9,9,True,PASS,Already the full unital associative operator algebra.
+3,traceless,8,8,False,False,False,9,9,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+3,ordered_no_self,6,6,False,False,False,9,9,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+3,unordered_self,6,6,True,False,False,9,9,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+3,unordered_no_self,3,3,False,False,False,9,9,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+3,phase_only_linear,3,3,True,True,True,3,9,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+3,shift_only_linear,3,3,True,True,True,3,9,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+3,phase_plus_shift_DCT,2,2,False,False,False,9,9,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+4,full_ordered_self,16,16,True,True,True,16,16,True,PASS,Already the full unital associative operator algebra.
+4,traceless,15,15,False,False,False,16,16,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+4,ordered_no_self,12,12,False,False,False,16,16,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+4,unordered_self,10,10,True,False,False,16,16,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+4,unordered_no_self,6,6,False,False,False,16,16,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+4,phase_only_linear,4,4,True,True,True,4,16,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+4,shift_only_linear,4,4,True,True,True,4,16,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+4,phase_plus_shift_DCT,2,2,False,False,False,16,16,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+5,full_ordered_self,25,25,True,True,True,25,25,True,PASS,Already the full unital associative operator algebra.
+5,traceless,24,24,False,False,False,25,25,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+5,ordered_no_self,20,20,False,False,False,25,25,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+5,unordered_self,15,15,True,False,False,25,25,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+5,unordered_no_self,10,10,False,False,False,25,25,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+5,phase_only_linear,5,5,True,True,True,5,25,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+5,shift_only_linear,5,5,True,True,True,5,25,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+5,phase_plus_shift_DCT,2,2,False,False,False,25,25,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+6,full_ordered_self,36,36,True,True,True,36,36,True,PASS,Already the full unital associative operator algebra.
+6,traceless,35,35,False,False,False,36,36,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+6,ordered_no_self,30,30,False,False,False,36,36,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+6,unordered_self,21,21,True,False,False,36,36,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+6,unordered_no_self,15,15,False,False,False,36,36,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+6,phase_only_linear,6,6,True,True,True,6,36,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+6,shift_only_linear,6,6,True,True,True,6,36,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+6,phase_plus_shift_DCT,2,2,False,False,False,36,36,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+7,full_ordered_self,49,49,True,True,True,49,49,True,PASS,Already the full unital associative operator algebra.
+7,traceless,48,48,False,False,False,49,49,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+7,ordered_no_self,42,42,False,False,False,49,49,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+7,unordered_self,28,28,True,False,False,49,49,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+7,unordered_no_self,21,21,False,False,False,49,49,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+7,phase_only_linear,7,7,True,True,True,7,49,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+7,shift_only_linear,7,7,True,True,True,7,49,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+7,phase_plus_shift_DCT,2,2,False,False,False,49,49,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+8,full_ordered_self,64,64,True,True,True,64,64,True,PASS,Already the full unital associative operator algebra.
+8,traceless,63,63,False,False,False,64,64,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+8,ordered_no_self,56,56,False,False,False,64,64,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+8,unordered_self,36,36,True,False,False,64,64,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+8,unordered_no_self,28,28,False,False,False,64,64,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+8,phase_only_linear,8,8,True,True,True,8,64,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+8,shift_only_linear,8,8,True,True,True,8,64,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+8,phase_plus_shift_DCT,2,2,False,False,False,64,64,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+9,full_ordered_self,81,81,True,True,True,81,81,True,PASS,Already the full unital associative operator algebra.
+9,traceless,80,80,False,False,False,81,81,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+9,ordered_no_self,72,72,False,False,False,81,81,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+9,unordered_self,45,45,True,False,False,81,81,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+9,unordered_no_self,36,36,False,False,False,81,81,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+9,phase_only_linear,9,9,True,True,True,9,81,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+9,shift_only_linear,9,9,True,True,True,9,81,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+9,phase_plus_shift_DCT,2,2,False,False,False,81,81,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+10,full_ordered_self,100,100,True,True,True,100,100,True,PASS,Already the full unital associative operator algebra.
+10,traceless,99,99,False,False,False,100,100,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+10,ordered_no_self,90,90,False,False,False,100,100,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+10,unordered_self,55,55,True,False,False,100,100,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+10,unordered_no_self,45,45,False,False,False,100,100,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+10,phase_only_linear,10,10,True,True,True,10,100,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+10,shift_only_linear,10,10,True,True,True,10,100,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+10,phase_plus_shift_DCT,2,2,False,False,False,100,100,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+11,full_ordered_self,121,121,True,True,True,121,121,True,PASS,Already the full unital associative operator algebra.
+11,traceless,120,120,False,False,False,121,121,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+11,ordered_no_self,110,110,False,False,False,121,121,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+11,unordered_self,66,66,True,False,False,121,121,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+11,unordered_no_self,55,55,False,False,False,121,121,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+11,phase_only_linear,11,11,True,True,True,11,121,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+11,shift_only_linear,11,11,True,True,True,11,121,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+11,phase_plus_shift_DCT,2,2,False,False,False,121,121,True,PASS,Required generators Z and X span the k^2 Weyl basis.
+12,full_ordered_self,144,144,True,True,True,144,144,True,PASS,Already the full unital associative operator algebra.
+12,traceless,143,143,False,False,False,144,144,True,FAIL P4,Identity direction is removed; multiplication regenerates nontraceless/self components.
+12,ordered_no_self,132,132,False,False,False,144,144,True,FAIL P4,E_01 E_10 = E_00 regenerates a deleted self-relation.
+12,unordered_self,78,78,True,False,False,144,144,True,FAIL P3; FAIL P4,Opposite directions are identified; ordinary composition regenerates directed matrix units.
+12,unordered_no_self,66,66,False,False,False,144,144,True,FAIL P1/P3; FAIL P4,Direction is forgotten and self-relations are removed; (E_01+E_10)^2 regenerates diagonal/self structure.
+12,phase_only_linear,12,12,True,True,True,12,144,False,FAIL P3,"Closed cyclic phase algebra, but omits traversal X."
+12,shift_only_linear,12,12,True,True,True,12,144,False,FAIL P1,"Closed cyclic traversal algebra, but omits phase Z."
+12,phase_plus_shift_DCT,2,2,False,False,False,144,144,True,PASS,Required generators Z and X span the k^2 Weyl basis.

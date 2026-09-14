@@ -1,0 +1,12 @@
+k,spectrum_distinct,computed_rank,expected_rank,full_matrix_algebra_rank
+2,True,4,4,True
+3,True,9,9,True
+4,True,16,16,True
+5,True,25,25,True
+6,True,36,36,True
+7,True,49,49,True
+8,True,64,64,True
+9,True,81,81,True
+10,True,100,100,True
+11,True,121,121,True
+12,True,144,144,True

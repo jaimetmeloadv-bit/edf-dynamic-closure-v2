@@ -1,0 +1,7 @@
+model,best_k_in_table_range,minimum_residual,exact_in_table_range
+full_ordered_with_self_k2,12,0.0,True
+full_traceless_k2_minus_1,12,0.003484320557491289,False
+ordered_without_self,12,0.043478260869565216,False
+unordered_with_self,10,0.0,True
+unordered_without_self,2,0.0,True
+linear_count,5,0.0,True

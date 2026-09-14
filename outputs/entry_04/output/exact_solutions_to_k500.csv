@@ -1,0 +1,5 @@
+model,k,F_k,structural_count
+full_ordered_with_self_k2,12,144,144
+unordered_with_self,10,55,55
+unordered_without_self,2,1,1
+linear_count,5,5,5

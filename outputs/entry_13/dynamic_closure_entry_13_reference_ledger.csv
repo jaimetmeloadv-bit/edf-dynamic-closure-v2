@@ -1,0 +1,19 @@
+Reference,Concept,Publication,DOI_or_ID,Entry13_role
+Bugeaud–Mignotte–Siksek (2006),Arithmetic uniqueness,"Annals of Mathematics 163, 969–1018",10.4007/annals.2006.163.969,Exact external theorem
+Marchiolli–Mendonça (2013),Finite phase/shift operators,"Annals of Physics 336, 76–97",10.1016/j.aop.2013.05.009,Mathematical framework
+Bertlmann–Krammer (2008),Weyl operator basis,"J. Phys. A 41, 235303",10.1088/1751-8113/41/23/235303,Mathematical framework
+Drazin–Johnson,KdV / sech² soliton representative,Solitons: An Introduction,10.1017/CBO9781139172059,Conditional field-equation precedent
+Wilson (1974),Gauge-theory confinement,"Phys. Rev. D 10, 2445",10.1103/PhysRevD.10.2445,Physical target / standard theory
+White (1969),Self-linking,"Am. J. Math. 91, 693–728",10.2307/2373348,Topological geometry
+Fuller (1971),Geometric writhe,"PNAS 68, 815–819",10.1073/pnas.68.4.815,Topological geometry
+Cover–Thomas (2006),Shannon entropy/grouping,Elements of Information Theory,10.1002/047174882X,Standard information theory
+Meyer (1989),Stochastic complementation,"SIAM Review 31, 240–272",10.1137/1031050,Boundary-memory mathematics
+Dörfler–Bullo (2013),Schur/Kron reduction,"IEEE TCAS-I 60, 150–163",10.1109/TCSI.2012.2215780,Boundary-reduction mathematics
+Jaynes (1957),Maximum entropy,"Physical Review 106, 620–630",10.1103/PhysRev.106.620,Entry 09 inference
+Falasco–Esposito (2021),Local detailed balance,"Phys. Rev. E 103, 042114",10.1103/PhysRevE.103.042114,Stochastic dynamics
+Villain et al. (1980),Order by disorder,"J. Physique 41, 1263–1272",10.1051/jphys:0198000410110126300,Methodological precedent
+Jiang et al. (2020),Intermediate quasicrystal pathways,"Phys. Rev. Materials 4, 023403",10.1103/PhysRevMaterials.4.023403,Strong pathway precedent
+Fayen et al. (2024),Entropy-stabilized dodecagonal QC,"Phys. Rev. Lett. 132, 048202",10.1103/PhysRevLett.132.048202,Environmental/statistical precedent
+Iwami–Ishimasa (2015),Real dodecagonal QC,Philosophical Magazine Letters 95,arXiv:1503.07602,Physical correspondence
+Particle Data Group (2024),Particle generations and measured properties,"Phys. Rev. D 110, 030001",10.1103/PhysRevD.110.030001,Physical test target
+Silva et al. (2019),Sub-laser-cycle strong-field dynamics,"Nature Photonics 13, 849–854",,Experimental platform

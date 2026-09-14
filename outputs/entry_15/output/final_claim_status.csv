@@ -1,0 +1,12 @@
+Claim,Statement,Epistemic_label,Location
+Dynamic Algebraic Closure,P1-P4 => C(k)=k^2,THEOREM,Main text
+Fibonacci-Compatible Closure,F_k=C(k) => k=12,COROLLARY,Main text
+Primitive Traversal,"r in {1,5,7,11}",COROLLARY,Main text
+CRT Factorization,H12 ~= H3 tensor H4,COROLLARY,Main text
+Monotone Selection,strictly decreasing w(D) selects k=12,PROPOSITION,Main text / methods
+Boundary Memory,Schur elimination preserves retained absorption,PROPOSITION,Main text
+Target causal sign,not universally positive,FALSIFICATION_RESULT,Discussion / repository
+Triplication physical map,Z3 sector -> fermion generations,OPEN_BRIDGE,Predictions
+Braid-to-QCD map,central braid -> confinement,OPEN_BRIDGE,Predictions
+Inverse-capacity gravity,G_eff ∝ 1/144,OPEN_BRIDGE,Predictions
+UV regulator,derive K_EDF or Lambda_EDF,OPEN_BRIDGE,Predictions

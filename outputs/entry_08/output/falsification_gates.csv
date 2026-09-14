@@ -1,0 +1,7 @@
+gate_id,failure_condition,consequence
+G1,The finite phases of A_k are not physically resolved.,Z is not forced by the EDF kernel; DCT chain stops.
+G2,Primitive evolution is not homogeneous coherent phase accumulation.,Delta_phi=2*pi*r/k need not follow.
+G3,The first recurrence order is smaller than k.,"gcd(k,r)>1 is allowed; full traversal fails."
+G4,Fundamental dynamic closure is not unital/associative under operator composition.,The M_k(C) closure theorem does not apply.
+G5,Fibonacci compatibility F_k=C(k) lacks independent EDF justification.,"k^2 is still derived, but k=12 does not follow."
+G6,A valid alternative theorem contradicts the BMS perfect-power classification.,Arithmetic uniqueness must be re-evaluated.

@@ -1,0 +1,4 @@
+defect_representation,configurations,mean_target_probability,mean_positive_causal_fraction,median_abs_causal_effect,min_schur_footprint,extinction_success,positive_residence_success,residence_above_tolerance_success,schur_success
+bounded,90,0.17953936914189805,0.5463173400673401,0.0042700229960575455,0.049893792882395795,1.0,1.0,1.0,1.0
+log,90,0.07845391546166931,0.5469381313131313,0.002991582886210071,0.017511401732225,1.0,1.0,1.0,1.0
+symmetric,90,0.030480481818882688,0.46138468013468015,0.0010120985239014482,0.0010735478903946567,1.0,1.0,0.9,1.0
