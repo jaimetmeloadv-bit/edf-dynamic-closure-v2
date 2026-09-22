@@ -928,7 +928,7 @@ def render_overview_page(entries: list[Entry]) -> str:
         </div>
         <nav class="nav-links">
         <a class="button-secondary" href="../README.md">Repository README</a>
-        <a class="button-secondary" href="#entries">Entries</a>
+          <a class="button-secondary" href="#entries">Entries</a>
         </nav>
       </div>
     </header>
