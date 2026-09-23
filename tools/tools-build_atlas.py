@@ -927,7 +927,7 @@ def render_overview_page(entries: list[Entry]) -> str:
           <small>Interactive visual index for notebook Entries 01–16</small>
         </div>
         <nav class="nav-links">
-        <a class="button-secondary" href="../README.md">Repository README</a>
+        <a class="button-secondary" href="https://github.com/jaimetmeloadv-bit/edf-dynamic-closure-v2/blob/main/README.md" target="_blank" rel="noopener noreferrer">Repository README</a>
           <a class="button-secondary" href="#entries">Entries</a>
         </nav>
       </div>
@@ -1185,9 +1185,7 @@ def write_text(path: Path, text: str):
 def main():
     entries = discover_entries()
 
-    if ATLAS_DIR.exists():
-        shutil.rmtree(ATLAS_DIR)
-
+    ATLAS_DIR.mkdir(parents=True, exist_ok=True)
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     ENTRIES_DIR.mkdir(parents=True, exist_ok=True)
 
