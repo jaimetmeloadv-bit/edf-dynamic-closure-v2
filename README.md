@@ -17,6 +17,94 @@ The repository is intended to stand as an independent computational record. It i
 
 ---
 
+## Version 2 — manuscript visual guide
+
+The diagrams below reproduce the explanatory structural figures included in the enhanced **Version 2** manuscript, in manuscript order. They are intended as a visual orientation layer for readers entering the repository from the paper.
+
+These diagrams do **not** replace the Computational Atlas and are not additional numerical certificates. The Atlas remains the computational/spectral record; this README visual sequence summarizes how the manuscript connects finite closure, projection geometry, regularization, spectral dimension, information descent, holonomy, the selected \(\mathbb Z_3\) sector, and the gravitational bridge.
+
+### General structural diagram
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/edf_v2_general_structural_diagram.png" alt="EDF V2 general structural diagram" width="760">
+</p>
+
+This overview shows the full Version-2 dependency chain at once: finite dynamic closure supplies the retained projection architecture; the same projection structure then feeds geometry and gauge structure, momentum-space transfer and regularization, spectral dimension, information-theoretic descent, holonomy/braid structure, the selected \(\mathbb Z_3\) spectrum, and the final scale/action/gravitational bridge.
+
+### Section 1 — Introduction
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section1_introduction.png" alt="Section 1 — Introduction" width="720">
+</p>
+
+The introductory diagram frames EDF as a projection hierarchy rather than a geometry imposed at the substrate. It also distinguishes the finite cyclic symmetry that organizes closure from the continuous bundle/gauge symmetry that appears after the retained subspace varies over a parameter manifold.
+
+### Section 2 — Finite Projection and Closure as Foundational Input
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section2_finite_projection_closure.png" alt="Section 2 — Finite Projection and Closure as Foundational Input" width="720">
+</p>
+
+This diagram summarizes the finite algebraic starting point: simple-spectrum phase resolution plus primitive traversal generates the complete matrix algebra \(M_k(\mathbb C)\) with capacity \(C(k)=k^2\). The separately stated Fibonacci Compatibility Condition then selects the nontrivial \(k=12\) solution, while nonprimitive traversals and the \(3\times4\) factorization retain the lower subclosure structure.
+
+### Section 3 — Projection-Induced Geometry and Gauge Structure
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section3_projection_geometry_gauge.png" alt="Section 3 — Projection-Induced Geometry and Gauge Structure" width="720">
+</p>
+
+A smoothly parameterized retained projector \(P(x)\) defines the projection bundle. The induced metric and the connection/curvature arise from that same projector architecture, so geometry and gauge structure are treated as two consequences of a common retained-subspace origin.
+
+### Section 4 — Projection Kernel, Regular Sources, and Ultraviolet Behavior
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section4_projection_kernel_uv.png" alt="Section 4 — Projection Kernel, Regular Sources, and Ultraviolet Behavior" width="720">
+</p>
+
+The momentum-space formulation tracks the cumulative transfer amplitude through successive projections. Its finite resolution scale controls short-distance suppression and the construction of regular effective source profiles, providing the Version-2 route from projection dynamics to ultraviolet behavior.
+
+### Section 5 — Projection-Resolved Spectral Dimension
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section5_spectral_dimension.png" alt="Section 5 — Projection-Resolved Spectral Dimension" width="720">
+</p>
+
+The projection scale is inserted into a diffusion probe to define a scale-dependent return probability and effective spectral dimension. This makes dimensional response a quantity resolved by the projected sector rather than an independently imposed fixed descriptor.
+
+### Section 6 — Quantum Information Descent, Recoverability, and Residual Memory
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section6_quantum_information_memory.png" alt="Section 6 — Quantum Information Descent, Recoverability, and Residual Memory" width="720">
+</p>
+
+The information-theoretic branch is expressed through quantum channels and relative entropy rather than assuming monotonic von Neumann entropy under arbitrary projection. Data-processing, recoverability, and residual memory then provide a controlled language for what projection removes explicitly and what remains encoded in the reduced description.
+
+### Section 7 — Projection Holonomy and Braid Closure
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section7_holonomy_braid.png" alt="Section 7 — Projection Holonomy and Braid Closure" width="720">
+</p>
+
+Here the connection generated by the varying retained projector is followed around closed parameter-space paths. The resulting holonomy supplies the continuous geometric object from which the manuscript examines the finite braid-closure structure.
+
+### Section 8 — The Selected \(\mathbb Z_3\) Sector and a Constrained Three-State Spectrum
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section8_z3_spectrum.png" alt="Section 8 — The selected Z3 sector and a constrained three-state spectrum" width="720">
+</p>
+
+The exact decomposition \(\mathbb Z_{12}\cong\mathbb Z_3\times\mathbb Z_4\) provides the three-sector factor without inserting triplication independently. Commutation with the cyclic generator constrains the natural eigenbasis and the form of symmetry-compatible three-state operators.
+
+### Section 9 and closing synthesis
+
+<p align="center">
+  <img src="figures/manuscript_visual_guide/section9_closing_synthesis.png" alt="Section 9 and closing synthesis" width="720">
+</p>
+
+The closing diagram brings together the smooth projection geometry, the finite projection scale, and the entropic action normalization. It displays the manuscript's final bridge toward a spectral gravitational coupling while keeping the analytical closure results distinct from the physical identifications that remain to be tested.
+
+---
+
 ## Central mathematical chain
 
 For a resolved finite phase space with primitive transitive traversal, the notebook verifies the full matrix-algebra closure
